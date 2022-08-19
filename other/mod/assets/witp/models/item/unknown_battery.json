@@ -1,0 +1,4 @@
+{
+    "parent": "witp:item/battery",
+    "textures": {"layer0":"witp:items/unknown_battery"}
+}

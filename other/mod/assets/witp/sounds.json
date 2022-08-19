@@ -1,0 +1,57 @@
+{
+    "question":
+    {
+        "category": "master",
+        "sounds":
+        [
+			{
+                "name":"witp:question",
+                "stream": false
+            }
+        ]
+    },
+	"right":
+    {
+        "category": "master",
+        "sounds":
+        [
+			{
+                "name":"witp:right",
+                "stream": false
+            }
+        ]
+    },
+	"wrong":
+    {
+        "category": "master",
+        "sounds":
+        [
+			{
+                "name":"witp:wrong",
+                "stream": false
+            }
+        ]
+    },
+	"battery_use":
+    {
+        "category": "master",
+        "sounds":
+        [
+			{
+                "name":"witp:battery_use",
+                "stream": false
+            }
+        ]
+    },
+	"battery_trigger":
+    {
+        "category": "master",
+        "sounds":
+        [
+			{
+                "name":"witp:battery_trigger",
+                "stream": false
+            }
+        ]
+    }
+}

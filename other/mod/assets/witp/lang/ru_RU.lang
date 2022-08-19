@@ -1,0 +1,34 @@
+witp.expired=§cВремя кончилось
+witp.wrong=§cНеверный ответ
+witp.right=§aВерный ответ
+
+key.witp.question=Получить вопрос
+
+witp.cooldown_dropped=§aВремя повторного вопроса для игрока %s сброшено
+witp.pokemon_not_found=§cУказанный покемон не найден
+witp.question_not_found=§cНет загатовленных вопросов с этим покемоном
+witp.question_asked=§aВопрос был отправлен игроку %s
+witp.stats_cleaned=Статы %s почищены
+
+witp.stats=Статистика
+witp.stats.wins=Верных ответов: §a%s
+witp.stats.loses=Неверных ответов: §c%s
+witp.stats.streak=Текущий стрик: §b%s
+witp.stats.max_streak=Максимальный стрик: §e%s
+
+item.witp.unknown_battery.info.line1=§bПри использовании эта батарейка
+item.witp.unknown_battery.info.line2=§bмгновенно перезаряжает систему вопросов
+
+item.witp.weak_unknown_battery.info.line1=§bПри использовании эта батарейка
+item.witp.weak_unknown_battery.info.line2=§bперезаряжает систему вопросов на половину
+
+item.witp.unstable_unknown_battery.info.line1=§bПри использовании эта батарейка
+item.witp.unstable_unknown_battery.info.line2=§bуменьшает перезарядку системы вопросов
+item.witp.unstable_unknown_battery.info.line3=§bна случайное время
+item.witp.unstable_unknown_battery.info.line4=§eЕсть шанс внезапного срабатывания системы
+
+item.unknown_battery.name=§6Батарейка для системы вопросов
+item.weak_unknown_battery.name=§6Слабая батарейка для системы вопросов
+item.unstable_unknown_battery.name=§6Нестабитьная батарейка для системы вопросов
+
+witp.no_cd_for_battery=Система вопросов заряжена. Не получится использовать батарейку.

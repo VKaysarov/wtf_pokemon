@@ -1,0 +1,34 @@
+witp.expired=§cTime has ended
+witp.wrong=§cWrong answer
+witp.right=§aRight answer
+
+key.witp.question=Take a question
+
+witp.cooldown_dropped=§aQuestion cooldown for %s has dropped
+witp.pokemon_not_found=§cPokemon with given name not found
+witp.question_not_found=§cThere is no question for this pokemon
+witp.question_asked=§aThe question send to %s
+witp.stats_cleaned=%s's stats cleaned
+
+witp.stats=Statistics
+witp.stats.wins=Right answers: §a%s
+witp.stats.loses=Wrong answers: §c%s
+witp.stats.streak=Current streak: §b%s
+witp.stats.max_streak=Max streak: §e%s
+
+item.witp.unknown_battery.info.line1=§bUsing this battery instantly
+item.witp.unknown_battery.info.line2=§brecharges question system
+
+item.witp.weak_unknown_battery.info.line1=§bUsing this battery recharges
+item.witp.weak_unknown_battery.info.line2=§bhalf of question system
+
+item.witp.unstable_unknown_battery.info.line1=§bUsing this battery reduces
+item.witp.unstable_unknown_battery.info.line2=§bcharging time of question system
+item.witp.unstable_unknown_battery.info.line3=§bon random time
+item.witp.unstable_unknown_battery.info.line4=§eHas chance to suddenly trigger the system
+
+item.unknown_battery.name=§6Battery for question system
+item.weak_unknown_battery.name=§6Weak battery for question system
+item.unstable_unknown_battery.name=§6Unstable battery for question system
+
+witp.no_cd_for_battery=Question system is ready. Can't use battery.

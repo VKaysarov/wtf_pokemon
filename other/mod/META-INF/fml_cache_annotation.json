@@ -1,0 +1,168 @@
+{
+  "me/cepera/witp/WITPQuestion": {
+    "name": "me/cepera/witp/WITPQuestion",
+    "interfaces": [
+      "net/minecraftforge/common/util/INBTSerializable"
+    ]
+  },
+  "me/cepera/witp/WhoIsThatPixelmon": {
+    "name": "me/cepera/witp/WhoIsThatPixelmon",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/minecraftforge/fml/common/Mod;",
+        "target": "me/cepera/witp/WhoIsThatPixelmon",
+        "values": {
+          "acceptedMinecraftVersions": {
+            "value": "[1.12.2]"
+          },
+          "dependencies": {
+            "value": "required-after: pixelmon@[7.0.0,]"
+          },
+          "modid": {
+            "value": "witp"
+          },
+          "name": {
+            "value": "WhoIsThatPixelmon"
+          },
+          "version": {
+            "value": "1.2.2"
+          }
+        }
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/Mod$Instance;",
+        "target": "INSTANCE"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/SidedProxy;",
+        "target": "PROXY",
+        "values": {
+          "clientSide": {
+            "value": "me.cepera.witp.proxy.ClientProxy"
+          },
+          "serverSide": {
+            "value": "me.cepera.witp.proxy.ServerProxy"
+          }
+        }
+      },
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/Mod$EventHandler;",
+        "target": "preinit(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/Mod$EventHandler;",
+        "target": "init(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/Mod$EventHandler;",
+        "target": "postinit(Lnet/minecraftforge/fml/common/event/FMLPostInitializationEvent;)V"
+      }
+    ]
+  },
+  "me/cepera/witp/listeners/ClientListener": {
+    "name": "me/cepera/witp/listeners/ClientListener",
+    "annotations": [
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/eventhandler/SubscribeEvent;",
+        "target": "onOverlayRender(Lnet/minecraftforge/client/event/RenderGameOverlayEvent$Pre;)V"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/eventhandler/SubscribeEvent;",
+        "target": "onChannelRegister(Lnet/minecraftforge/fml/common/network/FMLNetworkEvent$CustomPacketRegistrationEvent;)V"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/eventhandler/SubscribeEvent;",
+        "target": "onClientDisconect(Lnet/minecraftforge/fml/common/network/FMLNetworkEvent$ClientDisconnectionFromServerEvent;)V"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/eventhandler/SubscribeEvent;",
+        "target": "onKeyPress(Lnet/minecraftforge/fml/common/gameevent/InputEvent$KeyInputEvent;)V"
+      }
+    ]
+  },
+  "me/cepera/witp/listeners/RegistryListener": {
+    "name": "me/cepera/witp/listeners/RegistryListener",
+    "annotations": [
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/eventhandler/SubscribeEvent;",
+        "target": "registerSounds(Lnet/minecraftforge/event/RegistryEvent$Register;)V"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/eventhandler/SubscribeEvent;",
+        "target": "registerItems(Lnet/minecraftforge/event/RegistryEvent$Register;)V"
+      }
+    ]
+  },
+  "me/cepera/witp/network/NextUseTimePacket": {
+    "name": "me/cepera/witp/network/NextUseTimePacket",
+    "interfaces": [
+      "net/minecraftforge/fml/common/network/simpleimpl/IMessage"
+    ]
+  },
+  "me/cepera/witp/network/NextUseTimePacket$Handler": {
+    "name": "me/cepera/witp/network/NextUseTimePacket$Handler",
+    "interfaces": [
+      "net/minecraftforge/fml/common/network/simpleimpl/IMessageHandler"
+    ]
+  },
+  "me/cepera/witp/network/QuestionAnswerPacket": {
+    "name": "me/cepera/witp/network/QuestionAnswerPacket",
+    "interfaces": [
+      "net/minecraftforge/fml/common/network/simpleimpl/IMessage"
+    ]
+  },
+  "me/cepera/witp/network/QuestionAnswerPacket$Handler": {
+    "name": "me/cepera/witp/network/QuestionAnswerPacket$Handler",
+    "interfaces": [
+      "net/minecraftforge/fml/common/network/simpleimpl/IMessageHandler"
+    ]
+  },
+  "me/cepera/witp/network/QuestionButtonPressPacket": {
+    "name": "me/cepera/witp/network/QuestionButtonPressPacket",
+    "interfaces": [
+      "net/minecraftforge/fml/common/network/simpleimpl/IMessage"
+    ]
+  },
+  "me/cepera/witp/network/QuestionButtonPressPacket$Handler": {
+    "name": "me/cepera/witp/network/QuestionButtonPressPacket$Handler",
+    "interfaces": [
+      "net/minecraftforge/fml/common/network/simpleimpl/IMessageHandler"
+    ]
+  },
+  "me/cepera/witp/network/QuestionPacket": {
+    "name": "me/cepera/witp/network/QuestionPacket",
+    "interfaces": [
+      "net/minecraftforge/fml/common/network/simpleimpl/IMessage"
+    ]
+  },
+  "me/cepera/witp/network/QuestionPacket$Handler": {
+    "name": "me/cepera/witp/network/QuestionPacket$Handler",
+    "interfaces": [
+      "net/minecraftforge/fml/common/network/simpleimpl/IMessageHandler"
+    ]
+  },
+  "me/cepera/witp/network/StatsPacket": {
+    "name": "me/cepera/witp/network/StatsPacket",
+    "interfaces": [
+      "net/minecraftforge/fml/common/network/simpleimpl/IMessage"
+    ]
+  },
+  "me/cepera/witp/network/StatsPacket$Handler": {
+    "name": "me/cepera/witp/network/StatsPacket$Handler",
+    "interfaces": [
+      "net/minecraftforge/fml/common/network/simpleimpl/IMessageHandler"
+    ]
+  }
+}

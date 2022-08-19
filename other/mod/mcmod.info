@@ -1,0 +1,16 @@
+[
+{
+  "modid": "witp",
+  "name": "WhoIsThatPixelmon",
+  "description": "IT'S PIKACHU!!!",
+  "version": "1.12.2-1.2.2",
+  "mcversion": "1.12.2",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Cepera"],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
